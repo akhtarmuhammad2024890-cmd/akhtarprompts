@@ -6,98 +6,98 @@
       "title": "Seaside Terrace",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium white oversized shirt, tailored black trousers, a luxury-style silver wristwatch without visible branding, and clean black leather shoes. Place the person on a modern seaside terrace overlooking a deep blue ocean, with elegant white architecture and waves in the background. Soft golden-hour sunlight illuminates the face, while a subtle ocean breeze moves the shirt naturally. Capture with an 85mm portrait lens at f/1.8, sharp facial details, realistic skin texture, natural body proportions, and creamy background bokeh. Apply cinematic teal-and-gold color grading, sophisticated editorial composition, photorealistic 8K detail, vertical 4:5 portrait. No face alteration, no text, no watermark, no logos.",
-      "image": "images/p14.jpg"
+      "image": "p14.jpg"
     },
     {
       "id": "p07",
       "title": "Winter Cabin",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a luxurious burgundy wool overcoat, a light-gray scarf, fitted dark trousers, and polished leather boots, standing outside a rustic wooden cabin in a snowy pine forest. Cool twilight illuminates the snow, while warm golden light glows from the cabin windows. Capture with an 85mm lens at f/2, realistic snowflakes, sharp facial detail, and soft background bokeh. Apply cool winter-blue grading with warm highlights for a cinematic, elegant mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p07.jpg"
+      "image": "p07.jpg"
     },
     {
       "id": "p02",
       "title": "Golden Wheat",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a cream linen shirt, beige tailored trousers, and elegant brown shoes, standing in a golden wheat field at sunset. Warm sunlight creates a beautiful golden rim around the hair and soft shadows across the face. Photograph with an 85mm lens at f/2, natural skin texture, detailed fabric, and creamy background bokeh. Apply warm amber and honey color grading for an elegant, peaceful cinematic mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p02.jpg"
+      "image": "p02.jpg"
     },
     {
       "id": "p01",
       "title": "Neon Leather",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium black leather jacket over a charcoal shirt, standing on a futuristic city street at night. Cyan and purple neon lights reflect across wet pavement, creating dramatic cinematic illumination. Capture with an 85mm portrait lens at f/1.8, shallow depth of field, sharp facial details, and realistic skin texture. Apply teal and magenta color grading for a confident, mysterious atmosphere. Photorealistic, vertical 4:5 composition, no text, no watermark, no logos.",
-      "image": "images/p01.jpg"
+      "image": "p01.jpg"
     },
     {
       "id": "p06",
       "title": "Desert Dunes",
       "category": "Traditional",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in an elegant sand-colored traditional-inspired long tunic with a beautifully tailored dark waistcoat and clean leather shoes, standing among expansive golden desert dunes. Low afternoon sunlight casts long dramatic shadows across the sand, while a gentle breeze moves the clothing naturally. Photograph with an 85mm lens at f/2.8, preserving facial accuracy and realistic fabric details. Apply warm bronze and terracotta color grading for a dignified, cinematic atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p06.jpg"
+      "image": "p06.jpg"
     },
     {
       "id": "p11",
       "title": "Forest Trail",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a dark olive utility jacket, a beige crew-neck shirt, fitted brown cargo trousers, and durable outdoor boots, standing on a narrow trail inside a lush green forest. Dappled sunlight passes through tall trees, creating natural patches of light across the clothing and ground. Photograph with a 50mm lens at f/2, detailed facial features, realistic foliage, and soft background depth. Apply rich forest-green and earthy color grading for a grounded, adventurous cinematic mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p11.jpg"
+      "image": "p11.jpg"
     },
     {
       "id": "p13",
       "title": "Blue Hour Bridge",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a stylish slate-blue bomber jacket, a clean white T-shirt, dark slim-fit jeans, and minimalist sneakers, standing on a modern pedestrian bridge overlooking a city at blue hour. Cool twilight illuminates the surroundings, while soft golden streetlights create contrasting highlights on the face and jacket. Photograph with a 50mm lens at f/1.8, realistic skin texture, crisp eyes, and blurred city lights. Apply cinematic blue-and-gold color grading for a modern, confident mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p13.jpg"
+      "image": "p13.jpg"
     },
     {
       "id": "p03",
       "title": "Mountain Peak",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a forest-green outdoor jacket, black hiking trousers, and rugged hiking boots, standing on a rocky mountain overlook surrounded by majestic snow-covered peaks. Clear early-morning sunlight illuminates the landscape, with subtle atmospheric mist in the distance. Capture with a 50mm lens at f/2.8, realistic facial details, crisp clothing texture, and natural depth. Apply cool blue-gray color grading for an adventurous, powerful mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p03.jpg"
+      "image": "p03.jpg"
     },
     {
       "id": "p09",
       "title": "Autumn Park",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a rust-colored knitted sweater, a dark-brown corduroy jacket, and olive tailored trousers, standing in a beautiful autumn park covered with orange and golden leaves. Soft overcast daylight filters through the trees, creating gentle, even illumination. Photograph with an 85mm lens at f/1.8, realistic facial details, detailed fabric, and creamy foliage bokeh. Apply rich copper, amber, and earthy brown color grading for a warm, nostalgic cinematic mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p09.jpg"
+      "image": "p09.jpg"
     },
     {
       "id": "p04",
       "title": "Studio Suit",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a perfectly tailored midnight-blue suit, white dress shirt, and elegant black trousers, posing confidently inside a luxury photography studio with a warm taupe backdrop. A large softbox from the side creates smooth, sculpted lighting, while a subtle rim light separates the subject from the background. Photograph with an 85mm lens at f/2, precise focus, and realistic skin texture. Apply refined neutral color grading for a premium editorial mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p04.jpg"
+      "image": "p04.jpg"
     },
     {
       "id": "p12",
       "title": "Old Square",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a tailored camel-colored overcoat, a white shirt, dark tailored trousers, and polished brown Oxford-style shoes, standing beside an elegant historic stone building in a quiet European-style square. Soft morning sunlight creates gentle highlights and long architectural shadows. Capture with an 85mm lens at f/2, natural proportions, refined clothing details, and smooth background separation. Apply muted cream, brown, and gold color grading for a timeless, sophisticated editorial mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p12.jpg"
+      "image": "p12.jpg"
     },
     {
       "id": "p05",
       "title": "Rainy Evening",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a charcoal trench coat, black knit sweater, and dark trousers, standing beneath a city awning on a rainy evening. Raindrops sparkle in the background while reflections from distant streetlights illuminate the wet pavement. Soft blue evening light combines with subtle warm practical lighting. Capture with a 50mm lens at f/1.8, detailed facial texture, realistic rain, and shallow depth of field. Apply cinematic slate-blue color grading for a thoughtful, sophisticated mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p05.jpg"
+      "image": "p05.jpg"
     },
     {
       "id": "p10",
       "title": "Midnight Rooftop",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a deep navy formal suit, black shirt, and elegant dark leather shoes, standing on a sophisticated rooftop terrace overlooking a city skyline at midnight. Soft moonlight creates cool highlights, while discreet warm architectural lights illuminate the background. Capture with an 85mm lens at f/1.8, sharp eyes, natural skin texture, and beautiful distant light bokeh. Apply deep navy, silver, and subtle gold color grading for a mysterious, luxurious cinematic mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p10.jpg"
+      "image": "p10.jpg"
     },
     {
       "id": "p08",
       "title": "Modern Corridor",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a fitted black turtleneck, structured black blazer, tailored trousers, and minimalist leather shoes, standing in a modern concrete architectural corridor. A narrow beam of natural overhead light creates geometric shadows across the walls and floor. Capture with a 35mm lens at f/2.8, balanced environmental perspective, realistic skin texture, and crisp clothing details. Apply sophisticated monochrome-inspired grading while preserving natural skin tones for a bold, editorial mood. Vertical 4:5, no text, no watermark, no logos.",
-      "image": "images/p08.jpg"
+      "image": "p08.jpg"
     },
     {
       "id": "v1",
