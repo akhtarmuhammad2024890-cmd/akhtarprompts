@@ -1,6 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "prompts": [
+    {
+      "id": "p15",
+      "title": "White Courtyard",
+      "category": "Traditional",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a crisp white traditional shalwar kameez with a light grey waistcoat, standing in front of an old carved wooden doorway in a sunlit historic courtyard. Soft morning light, warm stone textures, a few drifting dust particles. Photograph with an 85mm lens at f/2, natural skin texture, detailed fabric, creamy background bokeh. Warm earthy color grading for a dignified, calm mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p15.jpg"
+    },
     {
       "id": "p14",
       "title": "Seaside Terrace",
