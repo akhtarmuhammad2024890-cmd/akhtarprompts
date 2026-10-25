@@ -1,6 +1,13 @@
 {
-  "version": 2,
+  "version": 3,
   "prompts": [
+    {
+      "id": "p16",
+      "title": "Studio Blue",
+      "category": "DP Prompts",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a fitted dark navy shirt, head and shoulders framing, face centered like a profile picture. Soft studio lighting with a gentle rim light against a smooth deep-blue gradient background. Capture with an 85mm lens at f/2, sharp eyes, natural skin texture. Subtle cool color grading for a clean, confident mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p16.jpg"
+    },
     {
       "id": "p15",
       "title": "White Courtyard",
