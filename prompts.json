@@ -1,6 +1,13 @@
 {
-  "version": 3,
+  "version": 4,
   "prompts": [
+    {
+      "id": "p17",
+      "title": "Spring Garden",
+      "category": "Kids",
+      "prompt": "Using the attached reference photo, keep the child's face, hairstyle, skin tone and features exactly the same. Dress the child in a cheerful light-yellow cotton shirt, soft denim shorts, and clean white sneakers, standing in a bright spring garden full of colorful flowers. Soft morning sunlight, gentle warm highlights on the face, a natural happy smile. Photograph with an 85mm lens at f/2, sharp eyes, natural skin texture, creamy green background bokeh. Apply fresh, bright, natural color grading for a joyful, innocent mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p17.jpg"
+    },
     {
       "id": "p16",
       "title": "Studio Blue",
