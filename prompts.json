@@ -1,6 +1,13 @@
 {
-  "version": 4,
+  "version": 5,
   "prompts": [
+    {
+      "id": "p18",
+      "title": "Black Kameez",
+      "category": "Traditional",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same  .Dress the person in a black traditional kameez shalwar, standing beside dark architectural stairs with bright yellow risers and softly blurred green foliage in the foreground. Natural daylight, realistic skin texture, detailed fabric, shallow depth of field, creamy background bokeh, sharp facial focus. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p18.jpg"
+    },
     {
       "id": "p17",
       "title": "Spring Garden",
