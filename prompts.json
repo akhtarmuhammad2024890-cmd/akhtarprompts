@@ -1,6 +1,13 @@
 {
-  "version": 6,
+  "version": 7,
   "prompts": [
+    {
+      "id": "p20",
+      "title": "Akhtar",
+      "category": "Traditional",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a luxurious, solid deep-black traditional shalwar kameez with matching trousers, premium fabric, and a clean, elegant fit. Place the person leaning casually against a black pillar with hands in pockets, surrounded by modern architectural stairs with bright yellow risers, glass railings, and softly blurred green foliage. Use natural daylight with gentle shadows and balanced highlights. Capture the portrait with an 85mm lens at f/1.8, sharp facial details, and shallow depth of field. Apply rich natural colors, subtle cinematic contrast, and a sophisticated fashion mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p20.jpg"
+    },
     {
       "id": "p19",
       "title": "Black",
