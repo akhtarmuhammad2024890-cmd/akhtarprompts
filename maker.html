@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akhtar Prompt Maker</title>
+<style>
+:root{--bg:#020839;--card:#0e1550;--line:#2a3580;--text:#fff;--mute:#9aa6e8;--acc:#2563eb;--cy:#22d3ee;--ok:#34d399;--bad:#f87171;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root{--bg:#f2f5ff;--card:#fff;--line:#c5cdf0;--text:#0b1240;--mute:#4a5590;--cy:#0e7490;--ok:#047857;--bad:#b91c1c;color-scheme:light}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:14px}
+h1{font-size:24px;margin:8px 0 2px}
+.sub{color:var(--mute);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;margin-bottom:12px}
+.card h2{font-size:17px;margin:0 0 8px;color:var(--cy)}
+label{display:block;font-weight:600;margin:10px 0 4px}
+textarea,input[type=text],input[type=password],select{width:100%;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit}
+textarea{min-height:130px;resize:vertical}
+select option{color:#000}
+button{background:var(--acc);color:#fff;border:0;border-radius:24px;padding:11px 18px;font:inherit;font-weight:700;margin:8px 8px 0 0}
+button.alt{background:transparent;border:1px solid var(--line);color:var(--text)}
+button:disabled{opacity:.45}
+.note{color:var(--mute);font-size:14px;margin:6px 0 0}
+.msg{margin-top:8px;font-weight:600;word-break:break-word}
+.ok{color:var(--ok)}.bad{color:var(--bad)}
+canvas{max-width:220px;width:100%;border-radius:12px;border:1px solid var(--line);display:block;margin-top:10px}
+</style>
+</head>
+<body>
+<main>
+<h1>Akhtar Prompt Maker</h1>
+<p class="sub">Add a new prompt from your phone.<br><span dir="rtl">له موبایل څخه نوی prompt زیات کړه.</span></p>
+
+<div class="card">
+<h2>Setup (one time)</h2>
+<label for="tok">GitHub token</label>
+<input type="password" id="tok" autocomplete="off" placeholder="github_pat_...">
+<button id="saveTok">Save token</button><button class="alt" id="delTok">Remove token</button>
+<div id="m0" class="msg"></div>
+<p class="note">The token stays only in this browser. Never send it to anyone, and never paste it in a chat.</p>
+</div>
+
+<div class="card">
+<h2>Step 1: Check the list</h2>
+<button id="chk">Check</button>
+<div id="m1" class="msg"></div>
+</div>
+
+<div class="card">
+<h2>Step 2: Choose your photo</h2>
+<p class="note">Video prompts do not need a photo.</p>
+<input type="file" id="pic" accept="image/*">
+<canvas id="cv" width="800" height="1000" hidden></canvas>
+<div id="m2" class="msg"></div>
+</div>
+
+<div class="card">
+<h2>Step 3: Write the prompt</h2>
+<button class="alt" id="wr">Copy ChatGPT instructions</button>
+<p class="note">Paste them once in ChatGPT. Then give it a short idea, and it writes the prompt for you.</p>
+<label for="ttl">Title</label>
+<input type="text" id="ttl" placeholder="Example: Black Kameez">
+<label for="cat">Category</label>
+<select id="cat"><option>Trending</option><option>Traditional</option><option>Kids</option><option>DP Prompts</option><option>Video Prompt</option></select>
+<label for="pr">Prompt</label>
+<textarea id="pr" placeholder="Using the attached reference photo, keep the person..."></textarea>
+<button class="alt" id="tpl">Add starting sentence</button>
+<p class="note">Kids prompts: use a child photo only with the family permission.</p>
+</div>
+
+<div class="card">
+<h2>Step 4: Publish</h2>
+<p class="note">This uploads the image, then updates prompts.json. All users get a notification.</p>
+<label style="font-weight:400"><input type="checkbox" id="fresh"> Also remove all OLD prompts (old ids). Do this only once.</label>
+<button id="pub">Publish</button>
+<div id="m4" class="msg"></div>
+</div>
+</main>
+<script>
+var OWNER='akhtarmuhammad2024890-cmd',REPO='akhtarprompts',BR='main';
+var START="Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. ";
+var WRITER=`You are the prompt writer for my Android app "Akhtar Prompt Studio". Users copy a prompt, attach their OWN photo in Gemini or ChatGPT, and paste the prompt to get a new image.
+
+Every time I give you an idea, write ONE prompt in exactly this format:
+
+Title: (2 to 3 words)
+Category: (Trending, Traditional, Kids, or DP Prompts)
+Prompt: (one paragraph, 80 to 130 words)
+
+Rules for the Prompt:
+1. It must start with: "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same."
+2. Use neutral words: "the person", never "man", "woman", "he" or "she". For the Kids category use "the child" and "keep the child's face, hairstyle, skin tone and features exactly the same."
+3. Then describe in order: the clothes, the place, the light, the camera (lens and aperture), the color grading and mood.
+4. End with: "Photorealistic, vertical 4:5, no text, no watermark, no logos."
+5. Do not mention any brand, logo, celebrity, movie, or real person.
+6. Do not copy any other app's prompt or wording. Write it fresh in your own words.
+7. Kids prompts must be simple, modest and family friendly (normal clothes, parks, gardens, festivals).
+8. DP Prompts are head-and-shoulders profile pictures with a clean background.
+9. Do not add explanations. Give only Title, Category and Prompt.
+
+My idea: (I will write it here each time)`;
+var $=function(i){return document.getElementById(i)};
+var blob=null;
+
+function say(el,t,ok){el.textContent=t;el.className='msg '+(ok?'ok':'bad')}
+function tk(){try{return localStorage.getItem('apmTok')||''}catch(e){return ''}}
+function b64(b){return new Promise(function(r){var f=new FileReader();f.onload=function(){r(f.result.split(',')[1])};f.readAsDataURL(b)})}
+
+async function gh(path,method,body){
+  var url='https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/'+path+(method==='GET'?'?ref='+BR+'&t='+Date.now():'');
+  var r=await fetch(url,{method:method,headers:{'Authorization':'Bearer '+tk(),'Accept':'application/vnd.github+json'},body:body?JSON.stringify(body):undefined});
+  var j=await r.json().catch(function(){return {}});
+  if(!r.ok)throw new Error(r.status+' '+(j.message||''));
+  return j;
+}
+
+async function load(){
+  if(!tk())throw new Error('Save your token first (Setup).');
+  var j=await gh('prompts.json','GET');
+  var bin=atob(j.content.replace(/\s/g,''));
+  var bytes=Uint8Array.from(bin,function(c){return c.charCodeAt(0)});
+  var data=JSON.parse(new TextDecoder().decode(bytes));
+  if(!data||!Array.isArray(data.prompts))throw new Error('prompts.json is not valid');
+  var mp=0,mv=0,old=0;
+  data.prompts.forEach(function(p){
+    var a=/^p(\d{3})$/.exec(p.id),b=/^v(\d{3})$/.exec(p.id);
+    if(a)mp=Math.max(mp,parseInt(a[1],10));
+    else if(b)mv=Math.max(mv,parseInt(b[1],10));
+    else old++;
+  });
+  return {data:data,sha:j.sha,idP:'p'+String(mp+1).padStart(3,'0'),idV:'v'+String(mv+1).padStart(3,'0'),old:old};
+}
+
+$('saveTok').onclick=function(){
+  var v=$('tok').value.trim();
+  if(!v){say($('m0'),'Paste the token first.',false);return}
+  try{localStorage.setItem('apmTok',v);$('tok').value='';say($('m0'),'Token saved on this phone.',true)}
+  catch(e){say($('m0'),'This browser cannot save the token.',false)}
+};
+$('delTok').onclick=function(){try{localStorage.removeItem('apmTok')}catch(e){}say($('m0'),'Token removed.',true)};
+if(tk())say($('m0'),'A token is saved on this phone.',true);
+
+$('chk').onclick=async function(){
+  try{var s=await load();say($('m1'),s.data.prompts.length+' items ('+s.old+' old). Next photo id: '+s.idP+', next video id: '+s.idV,true)}
+  catch(e){say($('m1'),'Error: '+e.message,false)}
+};
+
+$('pic').onchange=function(){
+  var f=this.files[0];if(!f)return;
+  var img=new Image();
+  img.onload=function(){
+    var cv=$('cv'),c=cv.getContext('2d'),W=800,H=1000,s=Math.max(W/img.width,H/img.height),w=img.width*s,h=img.height*s;
+    c.fillStyle='#000';c.fillRect(0,0,W,H);c.drawImage(img,(W-w)/2,(H-h)/2,w,h);
+    cv.hidden=false;
+    cv.toBlob(function(b){blob=b;say($('m2'),'Ready: 800x1000, '+Math.round(b.size/1024)+' KB',b.size<200*1024)},'image/jpeg',0.85);
+  };
+  img.onerror=function(){say($('m2'),'This file is not an image.',false)};
+  img.src=URL.createObjectURL(f);
+};
+
+$('wr').onclick=function(){
+  var done=function(){say($('m4'),'ChatGPT instructions copied.',true)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(WRITER).then(done,function(){say($('m4'),'Copy failed.',false)})}
+  else{var t=document.createElement('textarea');t.value=WRITER;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();done()}
+};
+
+$('tpl').onclick=function(){
+  var v=$('pr').value.replace(/^\s+/,'');
+  if(v.indexOf('Using the attached reference photo')!==0)$('pr').value=START+v;
+};
+
+$('pub').onclick=async function(){
+  var t=$('ttl').value.trim(),p=$('pr').value.trim(),btn=this;
+  var isVid=$('cat').value==='Video Prompt';
+  if(!isVid&&!blob){say($('m4'),'Choose a photo first (Step 2).',false);return}
+  if(!t||!p){say($('m4'),'Write the title and the prompt.',false);return}
+  if(p.indexOf('Using the attached reference photo')!==0){say($('m4'),'The prompt must start with: Using the attached reference photo',false);return}
+  if(!confirm($('fresh').checked?'Publish "'+t+'" and REMOVE all old prompts? All users get a notification.':'Publish "'+t+'" now? All users will get a notification.'))return;
+  btn.disabled=true;
+  try{
+    say($('m4'),'Checking the list...',true);
+    var s=await load();
+    var nid=isVid?s.idV:s.idP,name='';
+    if(!isVid){
+      name=nid+'.jpg';
+      say($('m4'),'Uploading image '+name+'...',true);
+      await gh(name,'PUT',{message:'Add image '+nid,content:await b64(blob),branch:BR});
+    }
+    say($('m4'),'Updating prompts.json...',true);
+    var item={id:nid,title:t,category:$('cat').value,prompt:p,image:name};
+    var v=(typeof s.data.version==='number'?s.data.version:0)+1;
+    var keep=s.data.prompts;
+    if($('fresh').checked)keep=keep.filter(function(x){return /^[pv]\d{3}$/.test(x.id)});
+    var out=JSON.stringify({version:v,prompts:[item].concat(keep)},null,2)+'\n';
+    await gh('prompts.json','PUT',{message:'Add prompt '+nid,content:await b64(new Blob([out])),sha:s.sha,branch:BR});
+    say($('m4'),'Published '+nid+' (version '+v+', total '+(keep.length+1)+' items). The notification arrives in about 2 minutes.',true);
+  }catch(e){say($('m4'),'Error: '+e.message+'. Nothing else was changed after this step.',false)}
+  btn.disabled=false;
+};
+</script>
+</body>
+</html>
