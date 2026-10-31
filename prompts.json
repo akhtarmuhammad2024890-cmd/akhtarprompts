@@ -1,6 +1,13 @@
 {
-  "version": 10,
+  "version": 11,
   "prompts": [
+    {
+      "id": "p004",
+      "title": "Emerald Garden",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in an elegant deep emerald green traditional shalwar kameez with delicate golden embroidery, a matching waistcoat and refined traditional footwear. Place the person standing beside a beautiful garden pathway surrounded by lush green plants, colorful flowers and a decorative stone fountain in the background. Soft morning sunlight filters through the leaves, creating gentle highlights and natural shadows. Capture with an 85mm portrait lens at f/1.8, crisp facial details and creamy background bokeh. Rich emerald tones, natural colors and a peaceful cinematic atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p004.jpg"
+    },
     {
       "id": "p003",
       "title": "Midnight Luxury",
