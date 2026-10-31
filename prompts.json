@@ -1,6 +1,13 @@
 {
-  "version": 13,
+  "version": 14,
   "prompts": [
+    {
+      "id": "p007",
+      "title": "Neon Profile Creator",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium black fitted outfit with elegant details and a sophisticated wristwatch. Position the person confidently, standing beside a futuristic transparent blue neon display, with one hand presenting a glowing social media profile card featuring a circular profile portrait, beautiful city skyline cover image, follower statistics, and elegant follow and message buttons. Create a luxurious dark navy studio background with a modern illuminated cityscape. Use cinematic blue rim lighting, realistic facial shadows, an 85mm portrait lens at f/1.8, vibrant blue color grading and a premium digital creator atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p007.jpg"
+    },
     {
       "id": "p006",
       "title": "Studio",
