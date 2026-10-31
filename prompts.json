@@ -1,6 +1,13 @@
 {
-  "version": 14,
+  "version": 15,
   "prompts": [
+    {
+      "id": "p008",
+      "title": "Misty Mountain Portrait",
+      "category": "DP Prompts",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium white sweatshirt with a clean, elegant casual style. Position the person confidently, leaning naturally against a rustic metal balcony railing, with one hand resting comfortably on it. Create a breathtaking mountainous background featuring lush green forests, layered misty hills, soft white clouds, and a peaceful natural atmosphere. Use soft cinematic daylight with realistic shadows and balanced highlights. Capture with an 85mm portrait lens at f/1.8, featuring sharp facial details and a beautifully blurred background. Apply natural cinematic color grading with a sophisticated, elegant mood. Add the name \"IRFAN ROKHAN\" in elegant, widely spaced uppercase dark gray typography at the top. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p008.jpg"
+    },
     {
       "id": "p007",
       "title": "Neon Profile Creator",
