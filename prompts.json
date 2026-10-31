@@ -1,6 +1,13 @@
 {
-  "version": 11,
+  "version": 12,
   "prompts": [
+    {
+      "id": "p005",
+      "title": "Winter Elegance",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a stylish charcoal grey winter coat over a black high-neck sweater, tailored trousers, leather boots and a soft wool scarf. Place the person on a charming snowy street surrounded by elegant European-style buildings, snow-covered trees and warm glowing street lamps. Gentle winter daylight creates soft highlights on the face while natural shadows add depth to the scene. Capture with an 85mm portrait lens at f/1.8, detailed facial texture and beautifully blurred snowy background. Cool cinematic tones balanced with warm golden highlights, creating a peaceful winter atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p005.jpg"
+    },
     {
       "id": "p004",
       "title": "Emerald Garden",
