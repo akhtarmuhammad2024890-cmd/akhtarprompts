@@ -1,6 +1,13 @@
 {
-  "version": 9,
+  "version": 10,
   "prompts": [
+    {
+      "id": "p003",
+      "title": "Midnight Luxury",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a perfectly tailored black formal suit with a crisp white shirt, elegant black trousers and polished leather shoes. Place the person beside a modern luxury building with dark glass walls, subtle architectural lighting and a beautifully illuminated entrance at night. Soft cinematic lighting highlights the face and outfit while creating dramatic yet natural shadows. Capture with an 85mm portrait lens at f/1.8, sharp facial details and smooth background bokeh. Deep black tones, subtle blue highlights and a sophisticated luxury photography mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p003.jpg"
+    },
     {
       "id": "p002",
       "title": "Desert Sunset",
