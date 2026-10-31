@@ -1,6 +1,13 @@
 {
-  "version": 8,
+  "version": 9,
   "prompts": [
+    {
+      "id": "p002",
+      "title": "Desert Sunset",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium beige traditional shalwar kameez with a matching elegant waistcoat, subtle fabric texture and polished traditional footwear. Place the person standing confidently on a beautiful desert landscape with golden sand dunes stretching into the distance and a clear open horizon. Warm sunset light creates soft highlights on the face and long natural shadows across the sand. Capture with an 85mm portrait lens at f/2, realistic skin details and smooth background bokeh. Warm golden color grading with a cinematic, peaceful atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p002.jpg"
+    },
     {
       "id": "p001",
       "title": "Blue Elegance",
