@@ -1,6 +1,13 @@
 {
-  "version": 12,
+  "version": 13,
   "prompts": [
+    {
+      "id": "p006",
+      "title": "Studio",
+      "category": "Traditional",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in an elegant black formal suit, a crisp white shirt, matching black trousers, and a white pocket square, with a stylish wristwatch. Place the person seated confidently in a luxurious modern office chair, with illuminated wooden bookshelves, neatly arranged books, a decorative globe, and beautiful green indoor plants in the background. Use soft professional lighting with natural shadows. Capture with an 85mm portrait lens at f/1.8. Apply warm golden highlights, balanced contrast, and cinematic color grading for a sophisticated atmosphere. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p006.jpg"
+    },
     {
       "id": "p005",
       "title": "Winter Elegance",
