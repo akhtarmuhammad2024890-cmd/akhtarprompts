@@ -1,6 +1,13 @@
 {
-  "version": 18,
+  "version": 19,
   "prompts": [
+    {
+      "id": "p009",
+      "title": "Mirror Reflection",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a stylish tailored black shirt, slightly unbuttoned at the collar, with a delicate silver chain. Capture the person from behind, showing the shoulders while the face appears clearly in a large modern mirror, looking directly into the reflection with a calm, serious expression. Set the scene in a luxurious dark interior with cyan-blue LED accents and elegant architectural details. Use soft dramatic lighting with natural facial highlights. Capture with an 85mm lens at f/1.8. Apply rich blacks, subtle cinematic color grading, and a sophisticated editorial mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p009.jpg"
+    },
     {
       "id": "p008",
       "title": "Misty Mountain Portrait",
