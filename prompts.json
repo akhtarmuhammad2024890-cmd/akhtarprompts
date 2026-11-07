@@ -1,6 +1,13 @@
 {
-  "version": 19,
+  "version": 20,
   "prompts": [
+    {
+      "id": "p010",
+      "title": "Dark Motivation",
+      "category": "DP Prompts",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in an oversized solid-black hoodie with realistic heavyweight cotton texture and natural folds. Position the person chest-up in the lower-right corner of a luxurious minimalist black studio, with a glowing white hanging bulb above. Add dramatic white rim lighting around the hair and shoulders, keeping the background deep black. Place elegant bold mustard-gold typography on the left reading \"NEVER GIVE UP\" with \"Akhtar\" beneath it. Capture with an 85mm lens at f/1.8. Apply deep blacks, metallic gold tones, cinematic contrast, and a powerful luxury editorial mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p010.jpg"
+    },
     {
       "id": "p009",
       "title": "Mirror Reflection",
