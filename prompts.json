@@ -1,6 +1,13 @@
 {
-  "version": 22,
+  "version": 23,
   "prompts": [
+    {
+      "id": "p012",
+      "title": "Golden Shadows",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a premium textured light beige crew-neck sweater and elegant thin-metal round eyeglasses with lightly tinted lenses. Position the person in a tight chest-up portrait, slightly right of center, looking thoughtfully toward the right. Include a heavily blurred silhouette in the left foreground for cinematic depth. Use dramatic warm golden-orange lighting from the left, creating rich facial highlights and natural shadows. Capture with an 85mm lens at f/2, maintaining sharp facial details and shallow depth of field. Apply deep black shadows, warm amber tones, subtle cinematic contrast, and an elegant editorial mood. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p012.jpg"
+    },
     {
       "id": "p011",
       "title": "Mountain Silence",
