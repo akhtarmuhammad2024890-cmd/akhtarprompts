@@ -1,9 +1,9 @@
 {
-  "version": 21,
+  "version": 22,
   "prompts": [
     {
       "id": "p011",
-      "title": "Golden Shadows",
+      "title": "Mountain Silence",
       "category": "Trending",
       "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a rust-brown lightweight zip-up jacket, black trousers, and a simple black wristwatch. Position the person sitting naturally on a dark volcanic rock in a peaceful mist-covered green mountain landscape, looking thoughtfully toward the distant hills. Use soft overcast morning light with gentle shadows and atmospheric fog. Capture with an 85mm lens at f/1.8, maintaining sharp facial details and a softly blurred background. Apply muted green and blue-gray tones, subtle vintage film grain, and a peaceful, introspective cinematic mood. Add elegant minimalist typography displaying only \"AKHTAR\" in the upper background. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
       "image": "p011.jpg"
