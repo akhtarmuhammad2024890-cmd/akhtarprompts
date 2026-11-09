@@ -1,6 +1,13 @@
 {
-  "version": 23,
+  "version": 24,
   "prompts": [
+    {
+      "id": "p013",
+      "title": "Midnight Lantern",
+      "category": "Trending",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Dress the person in a black button-up shirt with neatly rolled sleeves. Position the person standing beneath a vast dark night sky, holding a vintage black-metal lantern above the head with one hand while the other rests in a trouser pocket. Let the person gaze thoughtfully toward the glowing lantern. Use warm amber candlelight to illuminate one side of the face, neck, and raised arm, with natural deep shadows. Capture with an 85mm lens at f/1.8. Apply dark blue-black tones, subtle atmospheric haze, and dramatic cinematic color grading. Photorealistic, vertical 4:5, no text, no watermark, no logos.",
+      "image": "p013.jpg"
+    },
     {
       "id": "p012",
       "title": "Golden Shadows",
