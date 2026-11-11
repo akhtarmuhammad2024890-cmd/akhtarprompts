@@ -1,6 +1,13 @@
 {
-  "version": 24,
+  "version": 25,
   "prompts": [
+    {
+      "id": "v001",
+      "title": "Ai",
+      "category": "Video Prompt",
+      "prompt": "Using the attached reference photo, keep the person's face, hairstyle, skin tone and features exactly the same. Hi",
+      "image": ""
+    },
     {
       "id": "p013",
       "title": "Midnight Lantern",
